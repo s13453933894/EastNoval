@@ -1,5 +1,8 @@
 {
   "activation_function": "gelu_new",
+  "architectures": [
+    "TFGPT2LMHeadModel"
+  ],
   "attn_pdrop": 0.1,
   "bos_token_id": 50256,
   "embd_pdrop": 0.1,
@@ -21,5 +24,11 @@
   "summary_proj_to_labels": true,
   "summary_type": "cls_index",
   "summary_use_proj": true,
-  "vocab_size": 1393
+  "vocab_size": 1393,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  }
 }
