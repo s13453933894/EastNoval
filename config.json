@@ -1,6 +1,7 @@
 {
-  "_name_or_path": "/data/novels/models/",
+  "_name_or_path": "/data/wiki_zh/models/",
   "activation_function": "gelu_new",
+  "tokenizer_class": "BertTokenizer",
   "architectures": [
     "TFGPT2LMHeadModel"
   ],
