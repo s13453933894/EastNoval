@@ -1,7 +1,6 @@
 {
-  "_name_or_path": "/data/wiki_zh/models/",
+  "_name_or_path": "/data/novels/models/",
   "activation_function": "gelu_new",
-  "tokenizer_class": "BertTokenizer",
   "architectures": [
     "TFGPT2LMHeadModel"
   ],
@@ -20,6 +19,7 @@
   "n_layer": 24,
   "n_positions": 1024,
   "pad_token_id": 0,
+  "repetition_penalty": 1.3,
   "resid_pdrop": 0.1,
   "return_dict": true,
   "summary_activation": null,
@@ -30,8 +30,10 @@
   "task_specific_params": {
     "text-generation": {
       "do_sample": true,
-      "max_length": 120
+      "max_length": 120,
+      "repetition_penalty": 1.3
     }
   },
+  "tokenizer_class": "BertTokenizer",
   "vocab_size": 8021
 }
